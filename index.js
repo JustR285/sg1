@@ -1,15 +1,14 @@
 const chalk = require("chalk");
 const figlet = require("figlet");
 const inquirer = require("inquirer");
-const request = require("@i-scrapper/plugins-request");
+const request = require("@JustR285/plugins-request");
 
 const questions = [
     {
         type: "input",
         name: "authorization",
         message: color("Authorization keys:"),
-        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
-        suffix: "~",
+        prefix: `${color("[", "gray")}+${color("]", "gray")}`,
         validate: function (input) {
             const done = this.async();
             if (!input) {
@@ -33,8 +32,7 @@ const questions = [
         type: "list",
         name: "round",
         message: color("Authorization keys taken at 'Round':"),
-        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
-        suffix: "~",
+        prefix: `${color("[", "gray")}+${color("]", "gray")}`,
         choices: ["Stage 1", "Stage 2", "Stage 3"],
         filter: (value) => {
             return {
@@ -47,9 +45,8 @@ const questions = [
     {
         type: "input",
         name: "interval",
-        message: color("Interval Delay:"),
-        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
-        suffix: "~",
+        message: color("Delay?:"),
+        prefix: `${color("[", "gray")}+${color("]", "gray,
         default: 1000,
         validate: function (input) {
             const done = this.async();
@@ -69,7 +66,7 @@ const asciiText = figlet.textSync("i - Stumble", {
     width: 75,
     whitespaceBreak: true
 });
-console.log(color(asciiText, "redBright"));
+console.log(color(asciiText, "cyan"));
 
 inquirer.prompt(questions)
     .then(async ({ authorization, round, interval }) => {
@@ -86,7 +83,7 @@ function iStumble(interval, round, authorization) {
             } else if (typeof data == "object") {
                 const date = new Date();
                 let { Id, Username, Country, Region, Crowns, SkillRating } = data.User;
-                const print = `[${color(date.getHours())}:${date.getMinutes()}] ` + [color(Id, "blueBright"), color(Username), color(Country, "cyan"), color(Region, "cyanBright"), color(Crowns, "greenBright"), color(SkillRating, "yellowBright")].join(" | ");
+                const print = `[${color(date.getHours())}:${date.getMinutes()}:${(date.getSecond)}] ` + [color(Id, "redBright"), color(Username, "blueBright"), color(Country, "red"), color(Region, "red"), color(Crowns, "redBright"), color(SkillRating, "redBright")].join(" | ");
                 console.log(print);
             }
         } catch (error) {}
