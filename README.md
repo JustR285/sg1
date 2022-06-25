@@ -31,11 +31,13 @@ Follow This Step (tipe this) in Your Termux
 
 8.node index
 
-9.fill in input Authorization keys
+9.if you already install git and nodejs just start from number "5"
 
-10.fill in Delay (ms) [default: 1000]
+10.fill in input Authorization keys
 
-11.enjoy and use your own risk
+11.fill Delay You Want More faster, easier to get banned [default: 1000] [save: 5000]
+
+12.enjoy and use your own risk
 
 ## Credit
 
