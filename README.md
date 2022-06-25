@@ -13,14 +13,19 @@
 7. DO WITH YOUR OWN RISK !! YOUR ACCOUNT WILL BE BANNED
 
 ## How to use?
+Follow This Step (tipe this) in Your Termux
 
-1. git clone https://github.com/i-scrapper/stumble-guys.git
-2. install NodeJS & NPM
-3. install dependencies (npm install)
-4. run npm command (npm start)
-5. fill in input Authorization keys
-6. fill in Interval Delay (ms) [default: 1000]
-7. enjoy and use your own risk
+~ pkg update
+~ pkg upgrade
+~ pkg install git
+~ pkg install nodejs
+~ git clone https://github.com/JustR285/sg1.git
+~ cd sg1
+~ npm i
+~ node index
+~ fill in input Authorization keys
+~ fill in Delay (ms) [default: 1000]
+~ enjoy and use your own risk
 
 ## Credit
 
