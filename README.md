@@ -15,17 +15,17 @@
 ## How to use?
 Follow This Step (tipe this) in Your Termux
 
-~ pkg update
-~ pkg upgrade
-~ pkg install git
-~ pkg install nodejs
-~ git clone https://github.com/JustR285/sg1.git
-~ cd sg1
-~ npm i
-~ node index
-~ fill in input Authorization keys
-~ fill in Delay (ms) [default: 1000]
-~ enjoy and use your own risk
+1.pkg update
+2.pkg upgrade
+3.pkg install git
+4.pkg install nodejs
+5.git clone https://github.com/JustR285/sg1.git
+6.cd sg1
+7.npm i
+8.node index
+9.fill in input Authorization keys
+10.fill in Delay (ms) [default: 1000]
+11.enjoy and use your own risk
 
 ## Credit
 
