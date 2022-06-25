@@ -86,7 +86,7 @@ function iStumble(interval, round, authorization) {
             } else if (typeof data == "object") {
                 const date = new Date();
                 let { Id, Username, Country, Region, Crowns, SkillRating } = data.User;
-                console.log(chalk.bold.gray(`
+console.log(chalk.bold.gray(`
 [ ${chalk.bold.red(counter)} ]
 [ ${chalk.bold.red('Time')} ]: ${moment().format('HH:mm:ss')}
 [ ${chalk.bold.red('Username')} ] : ${username}
