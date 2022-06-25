@@ -1,28 +1,28 @@
 {
-  "name": "@i-scrapper/stumble-guys",
+  "name": "@JustR285/sg1",
   "version": "1.0.0",
-  "description": "Stumble-Guys - i-scrapper",
-  "main": "stumble.js",
+  "description": "sg1 - JustR285",
+  "main": "index.js",
   "scripts": {
     "test": "node .",
     "start": "node ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i-scrapper/stumble-guys.git"
+    "url": "git+https://github.com/JustR285/sg1.git"
   },
   "keywords": [
-    "stumble-guys",
-    "i-scrapper"
+    "sg1",
+    "JustR1"
   ],
-  "author": "i-scrapper",
+  "author": "JustR285",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/i-scrapper/stumble-guys/issues"
+    "url": "https://github.com/JustR285/sg1/issues"
   },
-  "homepage": "https://github.com/i-scrapper/stumble-guys#readme",
+  "homepage": "https://github.com/JustR285/sg1#readme",
   "dependencies": {
-    "@i-scrapper/plugins-request": "^1.0.0",
+    "@JustR285/plugins-request": "^1.0.0",
     "chalk": "^4.1.2",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.4"
