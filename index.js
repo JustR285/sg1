@@ -8,7 +8,7 @@ const questions = [
         type: "input",
         name: "authorization",
         message: color("Authorization keys:"),
-        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
+        prefix: `${color("[", "green")}+${color("]", "green")}`,
         suffix: "~",
         validate: function (input) {
             const done = this.async();
@@ -33,7 +33,7 @@ const questions = [
         type: "list",
         name: "round",
         message: color("Authorization keys taken at 'Round':"),
-        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
+        prefix: `${color("[", "green")}+${color("]", "green")}`,
         suffix: "~",
         choices: ["Stage 1", "Stage 2", "Stage 3"],
         filter: (value) => {
@@ -47,8 +47,8 @@ const questions = [
     {
         type: "input",
         name: "interval",
-        message: color("Interval Delay:"),
-        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
+        message: color("Delay?:"),
+        prefix: `${color("[", "green")}+${color("]", "greem")}`,
         suffix: "~",
         default: 1000,
         validate: function (input) {
@@ -69,7 +69,7 @@ const asciiText = figlet.textSync("i - Stumble", {
     width: 75,
     whitespaceBreak: true
 });
-console.log(color(asciiText, "redBright"));
+console.log(color(asciiText, "greenBright"));
 
 inquirer.prompt(questions)
     .then(async ({ authorization, round, interval }) => {
