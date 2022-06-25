@@ -87,12 +87,12 @@ function iStumble(interval, round, authorization) {
                 const date = new Date();
                 let { Id, Username, Country, Region, Crowns, SkillRating } = data.User;
 console.log(chalk.bold.gray(`
-[ ${chalk.bold.red(counter)} ]
-[ ${chalk.bold.red('Time')} ]: ${moment().format('HH:mm:ss')}
-[ ${chalk.bold.red('Username')} ] : ${username}
-[ ${chalk.bold.red('Country')} ] : ${country}
-[ ${chalk.bold.red('Trophy')} ] : ${trophy}
-[ ${chalk.bold.red('Crown')} ] : ${crown}`));
+[ ${bold.red(counter)} ]
+[ ${bold.red('Time')} ]: ${moment().format('HH:mm:ss')}
+[ ${bold.red('Username')} ] : ${username}
+[ ${bold.red('Country')} ] : ${country}
+[ ${bold.red('Trophy')} ] : ${trophy}
+[ ${bold.red('Crown')} ] : ${crown}`));
             }
         } catch (error) {}
     }, Number(interval));
